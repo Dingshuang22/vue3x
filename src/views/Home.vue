@@ -2,7 +2,7 @@
   <div class="home">
     <h2>fetch</h2>
     <h2>num数据绑定：{{ state.num }}</h2>
-    <button @click="ageChange">age++</button>
+    <button @click="login" >Login</button>
     <hr>
     <HomeComponent/>
   </div>
@@ -14,6 +14,7 @@ import HomeComponent from '@/components/Home_1'
 import { reactive , provide} from 'vue'
 // import { useStore } from 'vuex'
 // console.log(useStore)
+import { api } from '@/export'
 
 export default {
   name: 'Home',
@@ -32,9 +33,15 @@ export default {
       // console.log('ageChange')
       state.num++
     }
+    const login = ()=>{
+      api.login().then(res=>{
+      console.log(res.data)
+    })
+    }
     return {
       state,
-      ageChange
+      ageChange,
+      login
     }
   
   }
