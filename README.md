@@ -1,5 +1,13 @@
 # vue3x
 
+## 创建vue3x
+
+## npm install @vue/cli -g
+
+## vue create vue3x
+
+## handle(手动选择)
+
 ## Project setup
 ```
 npm install
@@ -22,3 +30,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
