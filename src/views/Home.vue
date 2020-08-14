@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <h2>fetch分支</h2>
-    <h2>fetch second</h2>
-    <h2>fetch third</h2>
-    <h3>fetch four</h3>
+    <h2>fetch</h2>
     <h2>num数据绑定：{{ state.num }}</h2>
     <button @click="ageChange">age++</button>
     <hr>
